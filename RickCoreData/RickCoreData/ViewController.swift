@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import SnapKit
 
 class ViewController: UIViewController {
 
