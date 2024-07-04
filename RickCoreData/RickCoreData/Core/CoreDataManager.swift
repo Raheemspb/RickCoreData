@@ -15,7 +15,7 @@ class CoreDataManager {
 
     lazy var persistentContainer: NSPersistentContainer = {
 
-        let container = NSPersistentContainer(name: "Rick_Morty_Coredata_05")
+        let container = NSPersistentContainer(name: "RickCoreData")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
