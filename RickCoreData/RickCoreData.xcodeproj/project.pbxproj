@@ -18,6 +18,8 @@
 		AA353C022C36D7CB00AA9119 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AA353C012C36D7CB00AA9119 /* SnapKit-Dynamic */; };
 		AA353C042C36D7E100AA9119 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353C032C36D7E100AA9119 /* NetworkManager.swift */; };
 		AA353C062C36D82000AA9119 /* CharacterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353C052C36D82000AA9119 /* CharacterEntity.swift */; };
+		AA353C092C36D8EF00AA9119 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353C082C36D8EF00AA9119 /* DataManager.swift */; };
+		AA353C0B2C36D94300AA9119 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353C0A2C36D94300AA9119 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AA353BF82C36D1E500AA9119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA353C032C36D7E100AA9119 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA353C052C36D82000AA9119 /* CharacterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEntity.swift; sourceTree = "<group>"; };
+		AA353C082C36D8EF00AA9119 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		AA353C0A2C36D94300AA9119 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,7 @@
 				AA353BE72C36D1E300AA9119 /* AppDelegate.swift */,
 				AA353BE92C36D1E300AA9119 /* SceneDelegate.swift */,
 				AA353BEB2C36D1E300AA9119 /* ViewController.swift */,
-				AA353C032C36D7E100AA9119 /* NetworkManager.swift */,
-				AA353C052C36D82000AA9119 /* CharacterEntity.swift */,
+				AA353C072C36D8C300AA9119 /* Core */,
 				AA353BED2C36D1E300AA9119 /* Main.storyboard */,
 				AA353BF32C36D1E500AA9119 /* Assets.xcassets */,
 				AA353BF52C36D1E500AA9119 /* LaunchScreen.storyboard */,
@@ -78,6 +81,17 @@
 				AA353BF02C36D1E300AA9119 /* RickCoreData.xcdatamodeld */,
 			);
 			path = RickCoreData;
+			sourceTree = "<group>";
+		};
+		AA353C072C36D8C300AA9119 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA353C052C36D82000AA9119 /* CharacterEntity.swift */,
+				AA353C032C36D7E100AA9119 /* NetworkManager.swift */,
+				AA353C082C36D8EF00AA9119 /* DataManager.swift */,
+				AA353C0A2C36D94300AA9119 /* CoreDataManager.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +175,10 @@
 				AA353BEC2C36D1E300AA9119 /* ViewController.swift in Sources */,
 				AA353BF22C36D1E300AA9119 /* RickCoreData.xcdatamodeld in Sources */,
 				AA353C042C36D7E100AA9119 /* NetworkManager.swift in Sources */,
+				AA353C092C36D8EF00AA9119 /* DataManager.swift in Sources */,
 				AA353BE82C36D1E300AA9119 /* AppDelegate.swift in Sources */,
 				AA353C062C36D82000AA9119 /* CharacterEntity.swift in Sources */,
+				AA353C0B2C36D94300AA9119 /* CoreDataManager.swift in Sources */,
 				AA353BEA2C36D1E300AA9119 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
