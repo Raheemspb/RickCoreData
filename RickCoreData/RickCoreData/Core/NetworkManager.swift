@@ -65,7 +65,5 @@ class NetworkManager {
                 print("Catch")
             }
         }.resume()
-
     }
-
 }

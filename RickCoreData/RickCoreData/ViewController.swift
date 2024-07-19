@@ -30,7 +30,6 @@ class ViewController: UIViewController {
                 self?.tableView.reloadData()
             }
         }
-
     }
 
     private func setupTableView() {
@@ -43,8 +42,6 @@ class ViewController: UIViewController {
             make.top.bottom.height.width.equalToSuperview()
         }
     }
-
-
 }
 
 extension ViewController: UITableViewDataSource {
@@ -55,7 +52,10 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "cell",
+            for: indexPath
+        ) as? CustomTableViewCell else { return UITableViewCell() }
 
         let character = characters[indexPath.row]
 
@@ -77,7 +77,4 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
-
-
 }
-
